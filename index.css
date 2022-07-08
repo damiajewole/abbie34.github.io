@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: 'linotype_didotroman';
+    src: url('didotlh-roman-webfont.woff2') format('woff2'),
+         url('didotlh-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: black;
+    color: white;
+    /* font-family: 'linotype_didotroman'; */
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 3rem;
+    /* margin: 0; */
+}
+
+nav{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.nav-logo{
+    justify-content: center;
+    align-items: center;
+    font-size: 31px;
+    line-height: 44px;
+    font-weight: 400;
+}
+
+.nav-logo a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    font-family:'Cormorant Garamond', serif;
+    font-size: 19px;
+    line-height: 34px;
+    gap: 2rem;
+}
+
+.nav-items > li{
+    list-style: none;
+}
+
+.nav-items > li > a{
+    color: white;
+    /* text-decoration: none; */
+    /* transition: 0.3s; */
+    text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;    
+    transition:width .4s ease-in-out;
+    transform-origin:left
+}
+
+.nav-items > li > a:hover{
+    text-decoration-color: #9E0031;
+    /* text-decoration-color: linear-gradient(
+        45deg,
+        #ff0a78,
+        #5773ff
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    text-underline-offset: 0.4em;
+}
+
+main{
+    width: 90%;
+    max-width: 1200px;
+    padding: 2.2rem 5.5rem;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+/* main h1{
+    background-image: linear-gradient(
+        45deg,
+        #ff0a78,
+        #5773ff
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.name{
+    /* color: #9E0031; */
+    background-image: linear-gradient(
+        45deg,
+        #ff0a78,
+        #5773ff
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sm-text{
+    font-family: 'Cormorant Garamond', serif;
+    /* font-style: italic; */
+    font-size: 23px;
+}
+
+.sm-text-link{
+    color: #808080;
+    /* color: #D88373; */
+    /* color: #89B0AE; */
+    text-decoration: underline;
+
+}
+
+.sm-text-link:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px){
+    /* .nav {
+        visibility: hidden;
+        height: 0;
+        position: absolute;
+    }
+    
+    .nav--visible {
+        visibility: visible;
+        height: auto;
+        position: relative;
+    }  */
+
+    /* body{
+        background-color: grey;
+    } */
+
+    main{
+        padding: 1.5rem 0;
+        font-size: 1.4rem;
+        margin: 0 auto;
+        text-align: center;
+        /* border: 1px solid white; */
+    }
+
+    .nav-items{
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* font-family:'Cormorant Garamond', serif; */
+        /* font-size: 19px; */
+        /* line-height: 34px; */
+        /* gap: 2rem; */
+        padding: 1rem;
+        border: 1px solid black transparent 1px solid black transparent;
+    }
+    
+}
